@@ -2,3 +2,7 @@
 .breadcrumb-item+.breadcrumb-item::before {
     padding-right: 1.5rem;
 }
+
+.s_text {
+    font-size: small;
+}
