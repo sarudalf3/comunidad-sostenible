@@ -1,0 +1,4 @@
+/* Inserta tu codigo aqui */
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-right: 1.5rem;
+}
