@@ -9,49 +9,79 @@
 				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 		<style>
-			* {outline: 1px dotted red;
-			font-family: OpenSans-Regular;}
+			/** {outline: 1px dotted red;
+			font-family: OpenSans-Regular;}*/
 			
-			.icon {
-				width: 90px;
-				float: center;
-			}			
-			
-			a.inicio {
-				text-decoration: none; /* no underline */
-				font-family: OpenSans-Regular;
+			.s_text {
+			font-size: small;
 			}
-			
+
+			.icon {
+			width: 90px;
+			float: center;
+			}			
+
+			a.inicio {
+			text-decoration: none;  
+			font-family: OpenSans-Regular;
+			}
+
 			.bg-cover {
-				width: 100%;
-				height: 450px;
-				background-image: url(img/semilla.jpg);
-				background-size: cover;
-				background-position: center;
+			width: 100%;
+			height: 450px;
+			background-image: url(img/semilla.jpg);
+			background-size: cover;
+			background-position: center;
 			}
 
 			.bg-cover2 {
-				width: 100%;
-				height: 340px;
-				background-image: url(img/metodo.jpg);
-				background-size: cover;
-				background-position: center;
+			width: 100%;
+			height: 340px;
+			background-image: url(img/metodo.jpg);
+			background-size: cover;
+			background-position: center;
 			}
-			
+
 			.bg-cover3 {
-				width: 100%;
-				height: 340px;
-				background-image: url(img/fondo.jpg);
-				background-size: cover;
-				background-position: center;
-				
+			width: 100%;
+			height: 340px;
+			background-image: url(img/fondo.jpg);
+			background-size: cover;
+			background-position: center;
+			
+			}	
+
+			.bg-cover4 {
+			width: 100%;
+			background-image: url(img/fondo2.jpg);
+			background-size: cover;
+			background-position: center;
+			
 			}	
 
 			.cover_team {
-				height: 35%;
+			height: 35%;
 			}
+
+			.previous {
+			width: 40px;
+			height: 40px;
+			background-image: url(img/iconos/slider/ecomunidad-15.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			}
+
+			.next {
+			width: 40px;
+			height: 40px;
+			background-image: url(img/iconos/slider/ecomunidad-16.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			}
+
 		</style>
 	</head>
+
 	<body>
 		<div class="row justify-content-evenly mx-5">
 			<div class="ml-3 my=0 col-2 d-inline-block align-middle"> 
@@ -61,7 +91,7 @@
 			</div>
 			<div class="col-8 d-inline-block py-0 px-2 align-middle">
 				<nav style="--bs-breadcrumb-divider: '|'" aria-label="breadcrumb" class="d-lg-flex align-items-middle mt-4 py-0">
-					<ol class="breadcrumb mx-1">
+					<ol class="breadcrumb my-1">
 						<li class="breadcrumb-item active px-2 py-0" aria-current="page"><a class="inicio text-secondary" href="#">Nosotros</a></li>
 						<li class="breadcrumb-item active px-2 py-0" aria-current="page"><a class="inicio text-secondary" href="#">Servicios</a></li>
 						<li class="breadcrumb-item active px-2 py-0" aria-current="page"><a class="inicio text-secondary" href="#">Proyectos</a></li>
@@ -185,7 +215,7 @@
 		</div>
 
 		<div class="container">
-			<h4 class="text-center mb-3 text-green text-bold">Equipo</h4>
+			<h4 class="text-center my-3 text-green text-bold">Equipo</h4>
 			<div class="row justify-content-around mb-0">
 				<div class="col-lg-6 col-md-6 col-sm-12 text-center">
 					<img class="rounded-circle cover_team" src="img/fotos/equipo2.jpg" alt="Camila">
@@ -220,73 +250,130 @@
 			</div>
 		</div>
 
-		<div class="container-fluid p-0" id=imagen-fondo-carrusel>
-			<div class="row">
-				<div class="col my-3 text-center">
-					<h3>Blog</h3>
-				</div>
-			</div>
-	
-			<div class="row">
-				<div class="col-12 col-sm-display-none">
-	
-					<!-- carrusel -->
-					<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-						<div class="carousel-indicators">
-							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-								class="active" aria-current="true" aria-label="Slide 1"></button>
-							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-								aria-label="Slide 2"></button>
-							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-								aria-label="Slide 3"></button>
-						</div>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="img/fotos/img-0400.JPG" class="d-block w-80 mx-auto"
-									alt="Niños con tierra en las manos">
-								<div class="carousel-caption d-none d-md-block">
-									<h3>Título del post</h3>
-									<h4>01.Ene.2015</h4>
-									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-								</div>
+		<div class="container-fluid bg-cover4 px-3 pb-5">
+			<h2 class="text-center py-4" style="font-family: OpenSans-Bold;">Blog</h2>
+			<div id="carousel-example-multi" class="carousel slide carousel-multi-item" data-ride="carousel">
+				<!--Slides-->
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<div class="row justify-content-center">
+							<!--First slide-->
+							<div class="col-3">
+								<img  src="img/fotos/img-0400.jpg" alt="Tren-carton" width="100%" height="200px">
+								<h3>Titulo del Post</h3>
+								<h6>01.Ene.2015</h6>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum porro repellendus a
+									odio quaerat quia culpa, pariatur qui magni quis, perferendis incidunt voluptate
+									nesciunt voluptatem. Expedita tempora temporibus numquam? Obcaecati.</p>
 							</div>
-							<div class="carousel-item">
-								<img src="img/fotos/img-9246.jpg" class="d-block w-80 mx-auto"
-									alt="tren de juguete hecho con desechos">
-								<div class="carousel-caption d-none d-md-block ">
-									<h5>Titulo del post 2</h5>
-									<h4>31.Dic.2014</h4>
-									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-								</div>
+							<!--Second slide-->
+							<div class="col-3">
+								<img  src="img/fotos/img-9246.jpg" alt="Ecology-child" width="100%" height="200px">
+								<h3>Titulo del Post 2</h3>
+								<h6>31.Dic.2014</h6>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum porro repellendus a
+									odio quaerat quia culpa, pariatur qui magni quis, perferendis incidunt voluptate
+									nesciunt voluptatem. Expedita tempora temporibus numquam? Obcaecati.</p>
 							</div>
-							<div class="carousel-item">
-								<img src="img/fotos/img_0334.jpg" class="d-block w-80 mx-auto"
-									alt="Niños mirando atentamente la tierra">
-								<div class="carousel-caption d-none d-md-block">
-									<h5>Título del post 3</h5>
-									<h4>30.12.214</h4>
-									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-								</div>
+							<!--Third slide-->
+							<div class="col-3">
+								<img  src="img/fotos/img-0400.jpg" alt="Ecology-child" width="100%" height="200px">
+								<h3>Titulo del Post 3</h3>
+								<h6>30.Dic.2014</h6>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum porro repellendus a
+									odio quaerat quia culpa, pariatur qui magni quis, perferendis incidunt voluptate
+									nesciunt voluptatem. Expedita tempora temporibus numquam? Obcaecati.</p>
 							</div>
 						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-							data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-							data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
+					</div>
+					<div class="carousel-item">
+						<div class="row justify-content-center">
+							<!--Four slide-->
+							<div class="col-3">
+								<img  src="img/fotos/IMG_0334.jpg" alt="boys-playing" width="100%" height="200px">
+								<h3>Titulo del Post 4</h3>
+								<h6>29.Dic.2014</h6>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum porro repellendus a
+									odio quaerat quia culpa, pariatur qui magni quis, perferendis incidunt voluptate
+									nesciunt voluptatem. Expedita tempora temporibus numquam? Obcaecati.</p>
+							</div>
+							<!--Five slide-->
+							<div class="col-3">
+								<img  src="img/fotos/IMG_0372.jpg" alt="cactus" width="100%" height="200px">
+								<h3>Titulo del Post 5</h3>
+								<h6>28.Dic.2014</h6>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum porro repellendus a
+									odio quaerat quia culpa, pariatur qui magni quis, perferendis incidunt voluptate
+									nesciunt voluptatem. Expedita tempora temporibus numquam? Obcaecati.</p>
+							</div>
+							<!--Six slide-->
+							<div class="col-3">
+								<img  src="img/fotos/img-0352.jpg" alt="boys" width="100%" height="200px">
+								<h3>Titulo del Post 6</h3>
+								<h6>27.Dic.2014</h6>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum porro repellendus a
+									odio quaerat quia culpa, pariatur qui magni quis, perferendis incidunt voluptate
+									nesciunt voluptatem. Expedita tempora temporibus numquam? Obcaecati.</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<!-- fin carrusel -->
-	
-			</div>
-	
+				<!--Controls-->
+				<button id="boton-prev" class="carousel-control-prev" type="button"
+					data-bs-target="#carousel-example-multi" data-bs-slide="prev">
+					<span class="previous" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button id="boton-next" class="carousel-control-next" type="button"
+					data-bs-target="#carousel-example-multi" data-bs-slide="next">
+					<span class="next" aria-hidden="true"></span> 
+					<span class="visually-hidden">Next</span>
+				</button>
+				
+			</div>					  
 		</div>
 
+		<div class="container-fluid bg-black">
+			<div class="container">
+				<div class="row justify-content-center px-2 py-5">
+					<div class="col-3 borderBox pt-3">
+						<h2 class="links text-white">Facebook</h2>
+						<a href="#">
+							<img src="img/facebook.png" width="22%"/>
+						</a>
+					</div>
+					<div class="col-3 borderBox pt-3">
+						<h2 class="links text-white">Twitter</h2>
+						<a href="#">
+							<img src="img/twitter.png" width="22%"/>
+						</a>
+					</div>
+					<div class="col-3 borderBox pt-3">
+						<h2 class="links text-white">LinkedIn</h2>
+						<a href="#">
+							<img src="img/in.png" width="22%"/>
+						</a>
+					</div>
+					<div class="col-3 borderBox pt-3">
+						<h3 class="links text-white"> E-mail</h3>
+						<img src="img/email.png" width="22%"/>
+					</div>
+				</div>	
+			</div>
+		</div>	
 		
+		<div class="container bg-white my-5">
+			<div class="row">
+				<div class="col s6">
+					<p class="my-0"> proyecto desarrollo por </p>
+					<p class="text-yellow my-1">Laboratoria</p>
+				</div>
+				<div class="col s6 text-right">
+					<p class="text-bold my-0">E-comunidad sostenible </p> 
+					<p class="text-bold my-1"> hola@ecomunidad.com.pe</p>
+					<p class="my-1">51 998 887 776</p>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
